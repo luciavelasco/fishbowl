@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  font-family: sans-serif, Arial;
+}
+
 main {
   width: 100vw;
   height: 100vh;
@@ -15,11 +20,13 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
 }
 
 .water {
   /*position: relative;*/
   max-height: 80vh;
+  /*max-width: 95vw;*/
   width: auto;
 }
 
