@@ -1,6 +1,7 @@
 const toggleTheme = document.querySelector('button')
 const themeIcon = document.querySelector('.mode-icon')
 const main = document.querySelector('main')
+// bulb: '💡'
 const sun = '☀️'
 const moon = '🌛'
 
@@ -11,6 +12,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 toggleTheme.addEventListener('click', () => {
     main.classList.toggle('dark')
-    themeIcon.innerText = toggleTheme.innerText == sun ? moon : sun
+    themeIcon.innerText = themeIcon.innerText === sun ? moon : sun
 })
+
+
 
