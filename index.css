@@ -6,11 +6,41 @@
 body {
   margin: 0;
   padding: 0;
+  /*background-color: #0b535d;*/
+  /*background-color: #04262a;*/
+}
+.smol-writing {
+  font-size: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+button {
+  border: none;
+  font-size: 2rem;
+  background-color: inherit;
+  padding: 2px 0.5rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  margin-left: 0.5rem;
+}
+button:hover {
+  border: 2px solid #5d9a9b;
+  padding: 0 calc(0.5rem - 2px);
+}
+
+.dark {
+  color: #E1F2FB;
+  background: rgb(11,83,93);
+  background: radial-gradient(circle, rgba(11,83,93,1) 26%, rgba(4,38,42,1) 92%);
 }
 
 h1 {
   text-align: center;
   font-family: sans-serif, Arial;
+  display: flex;
+  align-items: center;
 }
 
 main {
