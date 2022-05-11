@@ -1,0 +1,95 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.water {
+  /*position: relative;*/
+  max-height: 80vh;
+  width: auto;
+}
+
+.fish {
+  position: absolute;
+  bottom: 20vh;
+  height: 5vh;
+  left: 45vw;
+  animation: turn-fish infinite 16s linear;
+}
+
+.jelly {
+  height: 15vh;
+  bottom: 30vh;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes float-fish {
+  from {
+    left: 35vw;
+  }
+  to {
+    left: 65vw;
+  }
+}
+
+@keyframes turn-fish {
+  0% {
+    left: 35vw;
+    bottom: 30vh;
+    transform: scaleX(1) rotate(0deg) translateY(0px);
+  }
+  10% {
+    transform: scaleX(1) rotate(-5deg) translateY(-1rem);
+  }
+  20% {
+    bottom: 45vh;
+    transform: scaleX(1) rotate(5deg) translateY(1rem);
+  }
+  30% {
+    transform: scaleX(1) rotate(-5deg) translateY(-1rem);
+  }
+  40% {
+    bottom: 25vh;
+    transform: scaleX(1) rotate(5deg) translateY(1rem);
+  }
+  49% {
+    left: 65vw;
+    transform: scaleX(1) rotate(-5deg) translateY(-1rem);
+  }
+  51% {
+    transform: scaleX(-1) rotate(5deg) translateY(1rem);
+  }
+  60% {
+    bottom: 20vh;
+    transform: scaleX(-1) rotate(-5deg) translateY(-1rem);
+  }
+  70% {
+    transform: scaleX(-1) rotate(5deg) translateY(1rem);
+  }
+  80% {
+    bottom: 40vh;
+    transform: scaleX(-1) rotate(-5deg) translateY(-1rem);
+  }
+  90% {
+    transform: scaleX(-1) rotate(5deg) translateY(1rem);
+  }
+  100% {
+    left: 35vw;
+    bottom: 30vh;
+    transform: scaleX(-1) rotate(0deg) translateY(0px);
+  }
+}
