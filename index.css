@@ -37,15 +37,6 @@ main {
   animation-direction: alternate-reverse;
 }
 
-@keyframes float-fish {
-  from {
-    left: 35vw;
-  }
-  to {
-    left: 65vw;
-  }
-}
-
 @keyframes turn-fish {
   0% {
     left: 35vw;
@@ -67,7 +58,7 @@ main {
     transform: scaleX(1) rotate(5deg) translateY(1rem);
   }
   49% {
-    left: 65vw;
+    left: 60vw;
     transform: scaleX(1) rotate(-5deg) translateY(-1rem);
   }
   51% {
