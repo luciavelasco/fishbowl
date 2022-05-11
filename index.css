@@ -41,7 +41,7 @@ main {
 .jelly {
   height: 15vh;
   bottom: 30vh;
-  animation-direction: alternate-reverse;
+  animation-delay: 2s;
 }
 
 @keyframes turn-fish {
