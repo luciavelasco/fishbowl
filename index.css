@@ -53,6 +53,7 @@ main {
   position: relative;
   flex-direction: column;
   overflow: hidden;
+  color: #0b535d;
 }
 
 .water {
