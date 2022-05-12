@@ -42,6 +42,7 @@ button:hover {
   border-radius: 3px;
   animation: speech-blubble linear 2s;
   animation-fill-mode: forwards;
+  font-family: serif , "Times New Roman";
 }
 .dark {
   color: #E1F2FB;
@@ -84,6 +85,7 @@ main {
 }
 .fish img {
   height: 100%;
+  animation: flip-x infinite 16s linear;
 }
 .fish:hover {
   cursor: pointer;
@@ -113,33 +115,33 @@ main {
   }
   40% {
     bottom: 25vh;
-    transform: scaleX(1) rotate(5deg) translateY(1rem);
+    transform: rotate(5deg) translateY(1rem);
   }
   49% {
     left: 60vw;
-    transform: scaleX(1) rotate(-5deg) translateY(-1rem);
+    transform: rotate(-5deg) translateY(-1rem);
   }
   51% {
-    transform: scaleX(-1) rotate(5deg) translateY(1rem);
+    transform: rotate(5deg) translateY(1rem);
   }
   60% {
     bottom: 20vh;
-    transform: scaleX(-1) rotate(-5deg) translateY(-1rem);
+    transform: rotate(-5deg) translateY(-1rem);
   }
   70% {
-    transform: scaleX(-1) rotate(5deg) translateY(1rem);
+    transform: rotate(5deg) translateY(1rem);
   }
   80% {
     bottom: 40vh;
-    transform: scaleX(-1) rotate(-5deg) translateY(-1rem);
+    transform: rotate(-5deg) translateY(-1rem);
   }
   90% {
-    transform: scaleX(-1) rotate(5deg) translateY(1rem);
+    transform: rotate(5deg) translateY(1rem);
   }
   100% {
     left: 35vw;
     bottom: 30vh;
-    transform: scaleX(-1) rotate(0deg) translateY(0px);
+    transform: rotate(0deg) translateY(0px);
   }
 }
 
@@ -160,5 +162,20 @@ main {
   100% {
     transform: translate(-20px, -120px);
     opacity: 0;
+  }
+}
+
+@keyframes flip-x {
+  0% {
+    transform: scaleX(1)
+  }
+  50% {
+    transform: scaleX(1)
+  }
+  51% {
+    transform: scaleX(-1)
+  }
+  100% {
+    transform: scaleX(-1)
   }
 }
