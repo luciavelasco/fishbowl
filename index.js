@@ -1,7 +1,9 @@
 const toggleTheme = document.querySelector('button')
 const themeIcon = document.querySelector('.mode-icon')
 const main = document.querySelector('main')
+const fish = document.querySelector('.fish')
 // bulb: '💡'
+// blub: 🐠'
 const sun = '☀️'
 const moon = '🌛'
 
@@ -15,5 +17,12 @@ toggleTheme.addEventListener('click', () => {
     themeIcon.innerText = themeIcon.innerText === sun ? moon : sun
 })
 
-
-
+let numberOfBlubs = 0
+fish.addEventListener('click', () => {
+    fish.insertAdjacentHTML("afterbegin", `<div id="blub-${numberOfBlubs}" class="blub ${numberOfBlubs % 2 === 0 && 'dark'}">blub</div>`)
+    const currentFish = document.querySelector(`#blub-${numberOfBlubs}`)
+    numberOfBlubs++
+    setTimeout(() => {
+        currentFish.remove()
+    }, 2000)
+})
